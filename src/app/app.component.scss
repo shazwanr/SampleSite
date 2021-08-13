@@ -1,0 +1,186 @@
+.navbar-nav li{
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+.main-container {
+    width: 100%;
+    max-width: 1150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 32px 32px;
+    margin: 25px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.double-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multi-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi-items img{
+    width: 300px;
+    margin-left: 25px;
+}
+
+.one-double {
+    width: 100%;
+    max-width: 428px;
+    margin: 25px;
+}
+
+.video-container{
+    margin-top: 10px
+}
+
+.text-title{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+.text-subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+  
+div.scrollmenu .card{
+    display: inline-block;
+    max-width: 500px;
+    height: 850px;
+    white-space: normal;
+    margin: 10px;
+    box-shadow: 3px 3px 3px grey;
+    text-align: start;
+}
+
+div.scrollmenu .card-1{
+    display: inline-block;
+    width: 500px;
+    height: 245px;
+    white-space: normal;
+    margin: 10px;
+    margin-left: 25px;
+    box-shadow: 3px 3px 3px grey;
+}
+
+
+.card-body div{
+    margin-bottom: 40px;
+}
+
+.class-button{
+    position: absolute;
+    left: 4%;
+    bottom: 3%;
+}
+
+.pad-space-classes{
+    margin-bottom: 113px;
+}
+
+.pad-space-testimonial-0{
+    margin-bottom: 7px;
+}
+
+.pad-space-testimonial-1{
+    margin-bottom: 72px;
+}
+
+.pad-space-testimonial-2{
+    margin-bottom: 53px;
+}
+
+.pad-space-testimonial-3{
+    margin-bottom: 75px;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.class-img{
+    width: 240px;
+    height: 200px;
+}
+
+
+@media (max-width: 1024px) {
+    .main-container {
+        margin: 0px;
+    }
+    .double-items {
+      flex-direction: column;
+    }
+    .multi-items{
+        flex-direction: column;
+    }
+    .one-double {
+        text-align: center;
+        width: auto;
+        max-width: 100%;
+        margin: 0px;
+    }
+    .one-double img{
+        margin-top: 25px;
+    }
+    .pad-space-classes{
+        margin-bottom: 129px;
+    }
+    .pad-space-testimonial-1{
+        margin-bottom: 106px;
+    }
+    .pad-space-testimonial-2{
+        margin-bottom: 109px;
+    }
+    .pad-space-testimonial-3{
+        margin-bottom: 155px;
+    }
+    div.scrollmenu .card{
+        display: inline-block;
+        width: 280px;
+        height: 860px;
+        white-space: normal;
+        margin: 15px;
+        margin-left: 0px;
+        box-shadow: 3px 3px 3px grey;
+        text-align: start;
+    }
+    div.scrollmenu .card-1{
+        display: inline-block;
+        width: 270px;
+        height: 300px;
+        white-space: normal;
+        margin: 15px;
+        margin-left: 0px;
+        margin-top: 0px;
+        box-shadow: 3px 3px 3px grey;
+    }
+    .video-container{
+        width: 320px;
+        margin-top: 60px;
+    }
+
+    .class-img{
+        width: 140px;
+        height: 125px;
+    }
+  }
