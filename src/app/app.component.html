@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <nav class="navbar navbar-expand-lg navbar-dark py-4" style="background-color: #6d40c7;">
     <div class="container">
         <a class="navbar-brand" href="https://www.youthopia.co/"><img src="assets\img\YTP LOGO-07.png"
@@ -29,7 +30,7 @@
 </nav>
 
 <!-- content 1 -->
-<div class="main-container">
+<div class="main-container" style="padding: 16px 0px">
     <div class="double-items">
         <div class="one-double">
             <p class="text-title" style="font-family: t04b; color: #ca6702">FUN TIME WITH YOUTHOPIA!</p>
@@ -54,7 +55,7 @@
 </div>
 
 <!-- content 2 -->
-<div class="main-container">
+<div class="main-container" style="padding: 32px 0px;">
     <div class="scrollmenu" style="text-align: center;">
 
         <div class="card-1" style="vertical-align: top;">
@@ -99,6 +100,8 @@
 </div>
 
 <!-- content 3 -->
+
+<!-- content 4 -->
 <div class="main-container">
     <div class="text-center" style="align-content: center;">
         <p class="text-subtitle" style="font-family: fipps; color: #ee9b00;">UNLOCK YOUR TRUE POTENTIAL</p>
@@ -111,11 +114,11 @@
             sign
             up for:</p>
     </div>
-</div>
-
-<!-- content 4 -->
-<div class="main-container">
-    <div class="scrollmenu" style="text-align: center;">
+    <div *ngIf="!desktop_view" style="text-align: center">
+        <button mat-fab type="button" (click)="scrollLeft()" style="margin: 10px;"><mat-icon>arrow_back_ios</mat-icon></button>
+        <button mat-fab type="button" (click)="scrollRight()" style="margin: 10px;"><mat-icon>arrow_forward_ios</mat-icon></button>
+    </div>
+    <div class="scrollmenu" #container style="text-align: center;">
 
         <div class="card" style="padding-bottom: 5px; vertical-align: top;">
             <div style="text-align: center; background-color: #def6e5; padding: 15px;">
@@ -303,7 +306,12 @@
         </div>
 
     </div>
+    <div *ngIf="desktop_view" style="text-align: center">
+        <button mat-fab type="button" (click)="scrollLeft()" style="margin: 10px;"><mat-icon>arrow_back_ios</mat-icon></button>
+        <button mat-fab type="button" (click)="scrollRight()" style="margin: 10px;"><mat-icon>arrow_forward_ios</mat-icon></button>
+    </div>
 </div>
+
 
 <!-- content 5 -->
 <div class="p-4" style="background-color: #f3fcf5;">
