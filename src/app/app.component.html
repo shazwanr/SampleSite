@@ -114,17 +114,19 @@
             sign
             up for:</p>
     </div>
-    <div *ngIf="!desktop_view" style="text-align: center">
+    
+    <!-- <div *ngIf="!desktop_view" style="text-align: center">
         <button mat-fab type="button" (click)="scrollLeft()" style="margin: 10px;">
             <mat-icon>arrow_back_ios</mat-icon>
         </button>
         <button mat-fab type="button" (click)="scrollRight()" style="margin: 10px;">
             <mat-icon>arrow_forward_ios</mat-icon>
         </button>
-    </div>
-    <div class="scrollmenu" #container style="text-align: center;">
+    </div> -->
 
-        <div class="card" style="padding-bottom: 5px; vertical-align: top;">
+    <div [class]="desktop_view?'scrollmenu':null" #container style="text-align: center;">
+
+        <!-- <div class="card" style="padding-bottom: 5px; vertical-align: top;">
             <div style="text-align: center; background-color: #d8cded; padding: 15px;">
                 <img class="card-img-top class-img" src="assets\img\logo\Source code-bro.png" alt="img">
             </div>
@@ -181,7 +183,70 @@
                     style="background-color :#9b2226; border-color: #9b2226;"> Sign
                     Up</a>
             </div>
+        </div> -->
+
+        <div class="card" style="padding-bottom: 5px; vertical-align: top;">
+            <div style="text-align: center; background-color: #d8cded; padding: 15px;">
+                <img class="card-img-top class-img" src="assets\img\logo\Portfolio Update-bro.png" alt="img">
+            </div>
+            <div class="card-body">
+                <div>
+                    <h5 class="card-title"></h5>
+                    <p class="card-text" style="font-family: fipps; font-size: 15px; color: #9b2226;">11 & 12 SEPT 2021
+                    </p>
+                    <p class="card-text" style="font-family: upheavel; font-size: 20px">GODIGITALCLUB PRESENTS CANVA
+                        FOR KIDS</p>
+                    <p class="card-text" style="font-family: retron;">10am - 12pm</p>
+                    <p class="card-text" style="font-family: retron; color: #9b2226">The 4 hours Online crash course is
+                        focused on:-</p>
+                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Introduction to different
+                        type of images</p>
+                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Learn about icons and
+                        shapes to design</p>
+                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Presentation/Poster Design
+                        samples</p>
+                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Making simple videos using
+                        Canva</p>
+                    <p class="card-text" style="font-family: retron; color: #129699">Ages: 10 - 16 year olds</p>
+                    <p class="card-text" style="font-family: retron; color: #129699">Duration: 2 hrs per session</p>
+                    <p class="card-text" style="font-family: retron; color: #e69210">Taught by: GoDigitalClub</p>
+                </div>
+                <a href="https://form.jotform.com/clubgodigital/Canvaforkids_S2" class="btn btn-success class-button"
+                    style="background-color :#9b2226; border-color: #9b2226;"> Sign Up</a>
+            </div>
         </div>
+
+        <div class="card" style="padding-bottom: 5px; vertical-align: top;">
+            <div style="text-align: center; background-color: #def6e5; padding: 15px;">
+                <img class="card-img-top class-img" src="assets\img\logo\Knowledge-bro.png" alt="img">
+            </div>
+            <div class="card-body">
+                <div>
+                    <h5 class="card-title"></h5>
+                    <p class="card-text" style="font-family: fipps; font-size: 15px; color: #9b2226;">18, 25 SEPT & 2 OCT 2021</p>
+                    <p class="card-text" style="font-family: upheavel; font-size: 20px">FUTURE READY STUDY TECHNIQUES
+                    </p>
+                    <p class="card-text" style="font-family: retron;">10am - 11.30am</p>
+                    <p class="card-text" style="font-family: retron; color: #9b2226">a 3-week consecutive course for 1.5
+                        hours to 2 hours
+                        suitable for students aged 12 years old to 13 years old, maximum 8 per class. This course gives
+                        students
+                        <strong>tools to become a better student</strong>. It helps students become
+                        <strong> independent to motivate </strong>themselves as
+                        well as assess whether their student plan
+                        suits their lifestyle and personality.
+                    </p>
+                    <p class="card-text" style="font-family: retron; color: #129699">Ages: 12 - 14 year olds</p>
+                    <p class="card-text" style="font-family: retron; color: #129699">Duration: 2 hrs per session</p>
+                    <p class="card-text" style="font-family: retron; color: #e69210">Taught by: Ms Saranya</p>
+                </div>
+                <a href="https://form.jotform.com/212202074173442" class="btn btn-success class-button"
+                    style="background-color :#9b2226; border-color: #9b2226;"> Sign
+                    Up</a>
+            </div>
+        </div>
+
+        
 
         <div class="card" style="padding-bottom: 5px; vertical-align: top;">
             <div style="text-align: center; background-color: #d8cded; padding: 15px;">
@@ -210,74 +275,12 @@
                     <p class="card-text" style="font-family: retron; color: #129699">Duration: 3 hrs per session</p>
                     <p class="card-text" style="font-family: retron; color: #e69210">Taught by: GoDigitalClub</p>
                 </div>
-                <a href="https://form.jotform.com/clubgodigital/VideoforkidsS2" class="btn btn-success class-button"
-                    style="background-color :#9b2226; border-color: #9b2226;"> Sign
-                    Up</a>
-            </div>
-        </div>
-
-        <div class="card" style="padding-bottom: 5px; vertical-align: top;">
-            <div style="text-align: center; background-color: #def6e5; padding: 15px;">
-                <img class="card-img-top class-img" src="assets\img\logo\Knowledge-bro.png" alt="img">
-            </div>
-            <div class="card-body">
-                <div>
-                    <h5 class="card-title"></h5>
-                    <p class="card-text" style="font-family: fipps; font-size: 15px; color: #9b2226;">SEPT 2021</p>
-                    <p class="card-text" style="font-family: upheavel; font-size: 20px">FUTURE READY STUDY TECHNIQUES
-                    </p>
-                    <p class="card-text" style="font-family: retron;">10am - 11.30am</p>
-                    <p class="card-text" style="font-family: retron; color: #9b2226">a 3-week consecutive course for 1.5
-                        hours to 2 hours
-                        suitable for students aged 12 years old to 13 years old, maximum 8 per class. This course gives
-                        students
-                        <strong>tools to become a better student</strong>. It helps students become
-                        <strong> independent to motivate </strong>themselves as
-                        well as assess whether their student plan
-                        suits their lifestyle and personality.
-                    </p>
-                    <p class="card-text" style="font-family: retron; color: #129699">Ages: 12 - 14 year olds</p>
-                    <p class="card-text" style="font-family: retron; color: #129699">Duration: 2 hrs per session</p>
-                    <p class="card-text" style="font-family: retron; color: #e69210">Taught by: Ms Saranya</p>
-                </div>
-                <a href="https://form.jotform.com/212202074173442" class="btn btn-success class-button"
-                    style="background-color :#9b2226; border-color: #9b2226;"> Sign
-                    Up</a>
-            </div>
-        </div>
-
-        <div class="card" style="padding-bottom: 5px; vertical-align: top;">
-            <div style="text-align: center; background-color: #d8cded; padding: 15px;">
-                <img class="card-img-top class-img" src="assets\img\logo\Portfolio Update-bro.png" alt="img">
-            </div>
-            <div class="card-body">
-                <div>
-                    <h5 class="card-title"></h5>
-                    <p class="card-text" style="font-family: fipps; font-size: 15px; color: #9b2226;">21 & 22 AUG 2021
-                    </p>
-                    <p class="card-text" style="font-family: upheavel; font-size: 20px">GODIGITALCLUB PRESENTS CANVA
-                        FOR KIDS</p>
-                    <p class="card-text" style="font-family: retron;">10am - 12pm</p>
-                    <p class="card-text" style="font-family: retron; color: #9b2226">The 4 hours Online crash course is
-                        focused on:-</p>
-                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Introduction to different
-                        type of images</p>
-                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Learn about Icons and
-                        shapes to design</p>
-                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Presentation/Poster Design
-                        samples</p>
-                    <p class="card-text" style="font-family: retron; color: #9b2226">&#9658; Making simple videos using
-                        Canva</p>
-                    <p class="card-text" style="font-family: retron; color: #129699">Ages: 10 - 16 year olds</p>
-                    <p class="card-text" style="font-family: retron; color: #129699">Duration: 2 hrs per session</p>
-                    <p class="card-text" style="font-family: retron; color: #e69210">Taught by: GoDigitalClub</p>
-                </div>
                 <a class="btn btn-success class-button"
-                    style="background-color :#818181; border-color: #818181; pointer-events: none;"> Completed</a>
+                    style="background-color :#818181; border-color: #818181; pointer-events: none;"> Sign Up Closed</a>
             </div>
         </div>
 
-        <div class="card" style="padding-bottom: 5px; vertical-align: top;">
+        <!-- <div class="card" style="padding-bottom: 5px; vertical-align: top;">
             <div style="text-align: center; background-color: #def6e5; padding: 15px;">
                 <img class="card-img-top class-img" src="assets\img\logo\Code typing-bro.png" alt="img">
             </div>
@@ -303,7 +306,7 @@
                 <a class="btn btn-success class-button"
                     style="background-color :#818181; border-color: #818181; pointer-events: none;"> Completed</a>
             </div>
-        </div>
+        </div> -->
 
 
     </div>
