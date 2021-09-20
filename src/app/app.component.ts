@@ -16,11 +16,13 @@ export class AppComponent {
     this.screenConstant();
   }
 
+  //updates screen constant on resolution change
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.screenConstant();
   }
 
+  //checks device resolution & set screen constant
   screenConstant(){
     if (window.screen.width < 1024) {
       this.scrollLen = 310
